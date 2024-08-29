@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Spider Coin</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-green w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Spider<br>Industries</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Showcase</a> 
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Service</a> 
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Product</a>  
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-green w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-green w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Spider Coir</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>Spider Coir Industries</b></h1>
+    <h1 class="w3-xxxlarge w3-text-green"><b>Showcase.</b></h1>
+    <hr style="width:50px;border:5px solid green" class="w3-round">
+  </div>
+  
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="image2.jpg" style="width:100%" onclick="onClick(this)" alt="coco">
+      <img src="image3.jpg" style="width:100%" onclick="onClick(this)" alt="coco">
+      <img src="image1.png" style="width:100%" onclick="onClick(this)" alt="coco">
+    </div>
+
+    <div class="w3-half">
+      <img src="image4.jpg" style="width:100%" onclick="onClick(this)" alt="coco">
+      <img src="image6.jpg" style="width:100%" onclick="onClick(this)" alt="coco">
+      <img src="image5.png" style="width:100%" onclick="onClick(this)" alt="coco">
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-green"><b>Service</b></h1>
+    <hr style="width:50px;border:5px solid green" class="w3-round">
+    <p>We offer comprehensive services including the distribution, sale, and transport of high-quality coco peat and black rice to meet your agricultural and gardening needs.</p>
+    <p>Our company provides a full range of services focused on the distribution, sale, and transport of high-quality coco peat and black rice. We source our coco peat from sustainable coconut processing, ensuring it retains its superior water retention and nutrient-holding properties, ideal for gardening, hydroponics, and soil improvement. Our black rice is carefully selected to offer exceptional nutritional value and unique flavor, catering to health-conscious consumers and culinary enthusiasts alike. We handle all logistics from sourcing to delivery, ensuring timely and reliable service, whether you're a farmer, gardener, retailer, or wholesaler. Our goal is to support sustainable agriculture and promote healthy eating by making these versatile, eco-friendly products easily accessible to our customers worldwide.</p>
+  </div>
+  
+  <!-- Designers -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-green"><b>Product</b></h1>
+    <hr style="width:50px;border:5px solid green" class="w3-round">
+    <p>
+      Ideal for gardening and agriculture, coco peat promotes healthy root growth and reduces the need for chemical fertilizers!</p>
+  <p>Coco peat, also known as coir pith or coco coir, is a natural byproduct of coconut husk processing. It is widely used in gardening and agriculture as a sustainable and eco-friendly growing medium. Coco peat is renowned for its excellent water retention, aeration, and nutrient-holding capacity, making it an ideal choice for soil improvement, hydroponics, and seed starting. This versatile material is also biodegradable and promotes healthy root growth, reducing the need for chemical fertilizers. Explore our range of high-quality coco peat products to enhance your gardening and farming practices today!</p>
+    
+    <p><b>Our Product are thoughtfully chosen</b>:</p>
+  </div>
+
+  <!-- The Team -->
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m3 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="image3.jpg" alt="John" style="width:100%">
+        <div class="w3-container">
+          <h3>Coco peat</h3>
+          <p class="w3-opacity">Healthy</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m3 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="image2.jpg" alt="coco" style="width:100%">
+        <div class="w3-container">
+          <h3>Black Cocopeat</h3>
+          <p class="w3-opacity">Growth</p>
+          <p>Black coco peat is a high-quality, eco-friendly growing medium that enhances soil health and supports robust plant growth.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m3 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="paddy.avif" alt="coco" style="width:100%">
+        <div class="w3-container">
+          <h3>Paddy nursery</h3>
+          <p class="w3-opacity">Growth</p>
+          <p>
+            A growth medium for paddy nurseries is crucial for the successful cultivation of seedlings. It must retain moisture effectively, provide good aeration, and support root development.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m3 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="image1.png" alt="New Image" style="width:100%">
+        <div class="w3-container">
+          <h3>Forbidden Rice</h3>
+          <p class="w3-opacity">Nutrients</p>
+          <p>Forbidden rice, or black rice, is a highly nutritious grain rich in antioxidants, fiber, and minerals, known for its dark color and health benefits</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Packages / Pricing Tables -->
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-green"><b>Contact.</b></h1>
+    <hr style="width:50px;border:5px solid green" class="w3-round">
+    <p>Do you want us to our serive? Fill out the form and fill me in with the details : We love meeting new people!</p>
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Phone No</label>
+        <input class="w3-input w3-border" type="number" name="Phone No" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-Green w3-margin-bottom">Send Message</button>
+    </form>  
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-green w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-center">Powered by <a href="" title="W3.CSS" target="_blank" class="w3-hover-opacity">Raibs Info Tech</a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
